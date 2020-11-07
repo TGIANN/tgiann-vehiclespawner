@@ -50,7 +50,7 @@ function SpawnVehicle(carModel, cb, coords, isnetworked)
 			setVehicleData(vehicle, coords)
 		end
 
-		SetModelAsNoLongerNeeded(modelHash)
+		SetModelAsNoLongerNeeded(model)
 
 		if cb then 
 			while vehicle == nil do Citizen.Wait(0) end
